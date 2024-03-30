@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-image {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://th.bing.com/th/id/R.7f64a5d56adc7590e50507701f9095a7?rik=5rTPvgM7Ax8UPA&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+.interactable:hover {
+    background-size: 105%;
+    opacity: 0.8;
+}
+.interactable {
+    width: auto;
+}
+
+.card {
+    position: fixed;
+    bottom: 13vh;
+    left: 20vw;
+    background: transparent;
+    width: 60vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    gap: 5%;
+}
+
+.title {
+    top: 30%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: lighter;
+    font-size: 60px;
+}
+h2 {
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: lighter;
+    font-size: 15px;
+}
+  
+button {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px 37px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 25px;
+    transition-duration: 0.8s;
+}
+
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.info {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.create {
+    color: rgba(255, 255, 255, 0.9);
+}
