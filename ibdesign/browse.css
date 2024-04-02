@@ -100,18 +100,44 @@ body {
 }
 
 .tooltip {
-    width: 120px;
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
+    transition: 0.3s ease;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, rgb(23, 23, 23), rgba(23, 23, 23, 0.5));
+    border-radius: 10px;
     z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
 }
-  
-.card:hover > .card-content > .card-image > .tooltip {
-    visibility: visible;
+
+.card:hover > .card-content > .tooltip {
+    height: 20%;
+}
+
+.card:hover > .card-content > .tooltip > .tooltext {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card:hover > .card-content > .tooltip > .tooltext > .icons {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.tooltext {
+    width: 100%;
+    margin-left: 5%;
+    font-family: "Montserrat", sans-serif;
+    color: transparent;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.title {
+    
 }
