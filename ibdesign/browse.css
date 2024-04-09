@@ -5,13 +5,93 @@
   
 body {
     align-items: center;
-  background-color: var(--bg-color);
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  margin: 0px;
-  overflow: hidden;
-  padding: 0px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    gap: 30px;
+    font-family: "Montserrat", sans-serif; 
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(to right, #384BDA, #C32D57);
+    font-size: 100px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.navbar{
+    width: 87%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 1);
+    gap: 10px;
+    padding: 20px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgb(95, 95, 95);
+}
+
+.wrap{
+    width: 70%;
+}
+  
+.searchTerm:focus{
+    color: rgb(70, 70, 70);
+}
+  
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.filter{
+    font-family: "Montserrat", sans-serif;
+    width: auto;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border: 0px;
+    color: rgba(255, 255, 255, 0.5);
 }
   
 #cards {
